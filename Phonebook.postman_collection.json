@@ -1,0 +1,204 @@
+{
+	"info": {
+		"_postman_id": "756a3a22-e2a6-4dbf-beca-977e14469cdf",
+		"name": "Phonebook",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/getAllPhoneBook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"getAllPhoneBook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "insertData",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/addPhoneBook?name=Wulandari&address=Jalan Tulip&phoneNumber1=080908090809&phoneNumber2=081108110811&createdBy=admin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"addPhoneBook"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Wulandari"
+						},
+						{
+							"key": "address",
+							"value": "Jalan Tulip"
+						},
+						{
+							"key": "phoneNumber1",
+							"value": "080908090809"
+						},
+						{
+							"key": "phoneNumber2",
+							"value": "081108110811"
+						},
+						{
+							"key": "createdBy",
+							"value": "admin"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/getPhoneBookById?id=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"getPhoneBookById"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateData",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/updatePhoneBook?name=Wulandari&address=Jalan Tulip&phoneNumber1=080908090809&phoneNumber2=081108110811&updatedBy=admin&id=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"updatePhoneBook"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Wulandari"
+						},
+						{
+							"key": "address",
+							"value": "Jalan Tulip"
+						},
+						{
+							"key": "phoneNumber1",
+							"value": "080908090809"
+						},
+						{
+							"key": "phoneNumber2",
+							"value": "081108110811"
+						},
+						{
+							"key": "updatedBy",
+							"value": "admin"
+						},
+						{
+							"key": "id",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "softDeleteData",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/deletePhoneBook?id=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"deletePhoneBook"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteData",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/deletePhoneBook?id=4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"deletePhoneBook"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
